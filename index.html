@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <title>Tip calculator app | Frontend Mentor</title>
+</head>
+
+<body>
+<header>
+  <img id="logo" src="./images/logo.svg" />
+</header>
+<main>
+  <div class="container">
+  <div class="sub-container">
+    <h3>Bill</h3>
+    <div class="amount-container">
+      <img src="./images/icon-dollar.svg" />
+      <input id="bill-amount" type="number" class="input-num" required></input>
+    </div>
+  </div>
+  <div class="sub-container">
+    <h3>Select Tip %</h3>
+   
+    <div class="tip-selection" >
+      <button  name="tip-amount" id="5" value=".05" class="tip-amount" onclick="getTipPercentage(value)">5%</button>
+      <button  name="tip-amount" id="10" value=".10" class="tip-amount" onclick="getTipPercentage(value)">10%</button>
+      <button name="tip-amount" id="15" value=".15" class="tip-amount" onclick="getTipPercentage(value)">15%</button>
+      <button name="tip-amount" id="25" value=".25" class="tip-amount" onclick="getTipPercentage(value)">25%</button>
+      <button name="tip-amount" id="50" value=".50" class="tip-amount" onclick="getTipPercentage(value)">50%</button>
+      <button name="tip-amount" id="custom" value="" class="tip-amount custom" ><input id="custom-tip-amount" type="number" placeholder="Custom"></input></button>
+    </div>
+  
+  </div>
+  <div class="sub-container">
+    <h3>Number of People</h3>
+    <div class="amount-container">
+      <img src="./images/icon-person.svg" />
+      <input required id="num-people" class="input-num" type="number" onchange="calculateTotalPerPerson()"></input>
+    </div>
+  </div>
+</div>
+  <div class="result-container">
+    <div class="result-subcontainer">
+      <div>
+        <h4>Tip Amount</h4>
+        <h6>/ person</h6>
+      </div>
+      <span id="tip-amount-per"> $0.00 </span>
+    </div>
+
+    <div class="result-subcontainer">
+      <div>
+        <h4>Total</h4>
+        <h6>/ person</h6>
+      </div>
+      <span id="total-amount-per" class="total"> $0.00</span>
+    </div>
+    <button id="reset-btn" onclick="resetAll()">RESET</button>
+  </div>
+</main>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/ElizabethLankford">Elizabeth Lankford</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
