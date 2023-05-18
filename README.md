@@ -31,16 +31,16 @@ Users should be able to:
 
 Below is the screenshot of desktop view for the application.
 
-![](./screenshot-desktop.jpg)
+![](./images/screenshot-desktop.jpg)
 
 Below is the screenshot of the mobile device view for the application.
 
-![](./screenshot-mobile.jpg)
+![](./images/screenshot-mobile.jpg)
 
 ### Links
 
-- Repo URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Repo URL: [Tip-Calculator-Repo](https://github.com/ElizabethLankford/tip-calculator)
+- Live Site URL: [Tip-Calculator](https://willowy-pudding-33ecdc.netlify.app/)
 
 ## My process
 
